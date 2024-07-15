@@ -22,7 +22,7 @@ pipeline {
         stage('Build docker image') {
            steps {
                script {         
-		 def imageTag = "vinzydev15/petclini"  
+		 def imageTag = "vinzydev15/petclinic"  
                  def customImage = docker.build(imageTag,'handson/petclinic', "./docker")
                  docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                  customImage.push("${env.BUILD_NUMBER}")
