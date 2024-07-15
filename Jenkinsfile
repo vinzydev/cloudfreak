@@ -5,7 +5,7 @@ pipeline {
         jdk 'JDK8'
     }
     environment {
-        DOCKER_HUB_NAMESPACE = 'vinzydev'
+        DOCKER_HUB_NAMESPACE = 'vinzydev15'
         DOCKER_HUB_REPO = 'petclinic'
     }
     stages {
